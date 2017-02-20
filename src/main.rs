@@ -1,11 +1,16 @@
 mod search;
+mod tests;
+extern crate time;
 
 fn main() {
-    let arr = [0,2,4];
-    let v = 3;
-    let i = search::linear(v,&arr);
-    println!("Found {} in {:?} at {:?}", v, arr, i);
-    let j = search::binary(v,&arr);
-    println!("Found {} in {:?} at {:?}", v, arr, j);
+    println!("Testing Linear Search...");
+    tests::test(search::linear);
+    println!("Testing Binary Search...");
+    tests::test(search::binary);
 }
 
+//fn benchmark(v, arr) {
+//    let before = time::precise_time_ns();
+//    let i = search::linear(v,&arr);
+//    let after = time::precise_time_ns(); 
+//}

@@ -5,4 +5,4 @@ version = "0.0.1"
 authors = [ "Alex Mitchell <alex@alexthemitchell.com>" ]
 
 [dependencies]
-rand="0.3.0"
+time ="0.1"
